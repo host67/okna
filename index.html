@@ -23,6 +23,11 @@
           crossorigin="anonymous">
     <link rel="stylesheet"
           href="./static/css/style.css">
+    <link rel="stylesheet"
+          href="./static/css/owl.carousel.min.css">
+	<link rel="stylesheet"
+          href="./static/css/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -75,8 +80,8 @@
                 <div class="desc">
                     <h1 class="ws">ВЕСЬ ИЮНЬ</h1>
                     <h2 class="ws">СТАВИМ</h2>
-                    <h2 class="ws">ОКНА REHAU</h3>
-                        <h3 class="ws">БЕСПЛАТНО</h4>
+                    <h2 class="ws">ОКНА REHAU</h2>
+                        <h3 class="ws">БЕСПЛАТНО</h3>
                             <h4 class="ws">При заказе балкона “под ключ”</h4>
                             <a class="btn-action popup-click"
                                href="#"
@@ -231,10 +236,102 @@
                     </p>
                     <div class="default-separator default-separator_our-works"></div>
                 </div>
-            </div>
-        </div>
-
+				<div class="owl-container">	
+					<div class="row">
+						<div class="col-sm">
+							<div id="our-works-carousel" class="owl-carousel owl-theme">
+								<div class="our-works-item">
+									<div class="row">
+										<div class="col-sm">
+											<div class="our-works-img">
+												<img src="static/images/owl-01.jpg">
+											</div>
+										</div>
+										<div class="col-sm">
+											<div class="our-works-text">
+												<h4><span>Остекление и отделка</span><br>балкона "под ключ"</h4>
+												<ul>
+													<li>витражное остекление и замена балконного блока;</li>
+													<li>наружная отделка фасадными панелями Зодиак и монтаж отлива;</li>
+													<li>утепление и внутренняя отделка стен и потолка пластиковыми панелями Олимпия;</li>
+													<li>покрытие пола ламинатом;</li>
+													<li>установка тёплого пола и проведение внутреннего освещения;</li>
+													<li>изготовление и монтаж встроенного шкафа.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-works-item">
+									<div class="row">
+										<div class="col-sm">
+											<div class="our-works-img">
+												<img src="static/images/owl-01.jpg">
+											</div>
+										</div>
+										<div class="col-sm">
+											<div class="our-works-text">
+												<h4><span>Остекление и отделка</span><br>балкона "под ключ"</h4>
+												<ul>
+													<li>витражное остекление и замена балконного блока;</li>
+													<li>наружная отделка фасадными панелями Зодиак и монтаж отлива;</li>
+													<li>утепление и внутренняя отделка стен и потолка пластиковыми панелями Олимпия;</li>
+													<li>покрытие пола ламинатом;</li>
+													<li>установка тёплого пола и проведение внутреннего освещения;</li>
+													<li>изготовление и монтаж встроенного шкафа.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+			   </div>
+			</div>
+		</div>
     </main>
+	
+<style>
+.owl-container {
+	max-width: 1100px;
+	margin: 0 auto
+}
+.our-works-item {
+	width: 76%;
+    margin: 0 auto;
+}
+.our-works-img {
+	width: 103%;
+}
+.our-works-text {
+	width: 97%;
+}
+.our-works-item h4 {
+	font-weight: 700;
+	margin-left: 16px;
+}
+.our-works-item h4 span {
+	color: #D80000;
+}
+.owl-nav {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+.owl-theme .owl-dots .owl-dot span {
+	margin: 25px 9px 50px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #D80000;
+    background: #FFFFFF;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	background-color: #D80000;
+}
+</style>
 
     <footer role="contentinfo"
             class="footer">
@@ -307,7 +404,6 @@
     </div>
     <!-- Modal -->
 
-</body>
 <script>
     $('.popup-click').click(function () {
         $('#exampleModalCenter').modal('show')
@@ -371,6 +467,22 @@
         src="static/js/plugins.js"></script>
 <script type="text/javascript"
         src="static/js/custom.js"></script>
+				
+<script>
+	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+			autoplay:true,
+			items:1,
+			loop:true,
+            dots:true,
+			center:true,
+            nav:true,
+			navText : ["<img src='static/images/icons/owl-prev.png'>", "<img src='static/images/icons/owl-next.png'>"]
+		});
+	});
+</script>				
+				
+				
 </body>
 
 
